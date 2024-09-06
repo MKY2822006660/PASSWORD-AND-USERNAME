@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Text Reveal</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            height: 300;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .hidden-text {
+            font-size: 1.2rem;
+            color: #007acc;
+            font-weight: bold;
+            margin-top: 20px;
+            display: none; /* Initially hidden */
+        }
+
+        /* Button Styling */
+        .reveal-btn {
+            background-color: #007acc;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .reveal-btn:hover {
+            background-color: #005fa3;
+        }
+
+        .reveal-btn:focus {
+            outline: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PASSWORD AND USERNAME</h1>
+
+<H3>            Correct Email: "CORTEC.FOUNDER@GOOGLE.COM"
+            Correct Password: "CORTEX-2024"</H3>
+    </div>
+
+    <script>
+        function revealText() {
+            var text = document.getElementById("hiddenMessage");
+            text.style.display = "block";
+        }
+    </script>
+</body>
+</html>
